@@ -91,7 +91,7 @@ export default function FewdModal() {
               </div>
               <div>
                 <h5 className="white-color mt-4">Front End Web Developer </h5>
-                <h6 className="orange-color">2022 May - present</h6>
+                <h6 className="orange-color"> May 2022 - present</h6>
               </div>
               <div>
                 <p className="light-gray-color line-height">
@@ -144,7 +144,7 @@ export default function FewdModal() {
             </Box>
           </Modal>
         </div>
-        <h6 className="orange2-color">2022 May - present</h6>
+        <h6 className="orange2-color"> May 2022 - present</h6>
         <p className="light-gray-color mb-0">
           {" "}
           I am currently working as a front end web developer on freelancing websites.  </p>

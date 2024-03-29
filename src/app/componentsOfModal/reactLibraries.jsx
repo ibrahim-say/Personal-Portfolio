@@ -32,7 +32,7 @@ function ReactLibraries() {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style} className="modal-scroll w-sm h-sm">
-        <Title title="Reac Libraries" />
+        <Title title="React Libraries" />
         <div className="text-center mt-4 ">
           <Image
             src={reactImage}
@@ -64,7 +64,7 @@ function ReactLibraries() {
             <li className="position-relative mt-4 white-color">Material Ui</li>
             <li className="position-relative mt-4 white-color">Redux Toolkit</li>
             <li className="position-relative mt-4 white-color">Hotkeys</li>
-            <li className="position-relative mt-4 white-color">Alertt Sweet</li>
+            <li className="position-relative mt-4 white-color">Alert Sweet</li>
             <li className="position-relative mt-4 white-color">Axios</li>
 
      </ul>

@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div>
       <Title title="Contact" />
-      <Map />
+      {/* <Map /> */}
       <ContactForm />
     </div>
   );

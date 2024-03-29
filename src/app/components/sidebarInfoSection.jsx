@@ -1,8 +1,8 @@
 import React from "react";
 
-function SidebarProfile(props) {
+function SidebarInfoSection(props) {
   return (
-    <div className={`d-flex gap-3 mt-5 align-items-center ${props.className}`}>
+    <div className={`d-flex gap-3 mt-5 align-items-center col-xl-12 col-md-6`}>
       <button
         disabled
         className="rounded-3 secondary-bg "
@@ -30,4 +30,4 @@ function SidebarProfile(props) {
   );
 }
 
-export default SidebarProfile;
+export default SidebarInfoSection;

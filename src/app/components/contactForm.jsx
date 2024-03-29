@@ -14,6 +14,31 @@ function ContactForm() {
     loading: false,
   });
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function checkBtnDisabled(e) {
+    if (e.target.type === "text") {
+      setName(e.target.value);
+    } else if (e.target.type === "email") {
+      setEmail(e.target.value);
+    } else {
+      setMessage(e.target.value);
+    }
+  }
+  function changeBorderForForm(e) {
+    if (e.target.value !== "") {
+      if (e.target.type === "email") {
+        if (emailRegex.test(e.target.value)) {
+          e.target.classList.add("border-orange");
+        }
+      } else {
+        e.target.classList.add("border-orange");
+      }
+    } else {
+      e.target.classList.remove("border-orange");
+    }
+    checkBtnDisabled(e);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormSubmit({ ...formSubmit, loading: true });
@@ -39,41 +64,10 @@ function ContactForm() {
       });
   };
 
-  function checkBtnDisabled(e) {
-    if (e.target.type === "text") {
-      setName(e.target.value);
-    } else if (e.target.type === "email") {
-      setEmail(e.target.value);
-    } else {
-      setMessage(e.target.value);
-    }
-  }
-  function changeBorderForForm(e) {
-    if (e.target.value !== "") {
-      if (e.target.type === "email") {
-        console.log(emailRegex.test(e.target.value));
-        if (emailRegex.test(e.target.value)) {
-          e.target.classList.add("border-orange");
-        }
-      } else {
-        e.target.classList.add("border-orange");
-      }
-    } else {
-      e.target.classList.remove("border-orange");
-    }
-    checkBtnDisabled(e);
-  }
-
   useEffect(() => {
-    if (name !== "" && email !== "" && message !== "") {
-      document
-        .getElementsByClassName("form-btn")[0]
-        .classList.remove("form-btn-not-allowed", "border-0");
+    if (name != "" && email !== "" && message != "") {
       setDisabled(false);
     } else {
-      document
-        .getElementsByClassName("form-btn")[0]
-        .classList.add("form-btn-not-allowed", "border-0");
       setDisabled(true);
     }
   }, [name, email, message]);
@@ -104,7 +98,7 @@ function ContactForm() {
                 className="rounded-4 main-border  section-bg w-100 ps-3"
                 onChange={changeBorderForForm}
                 style={{ height: "50px", cursor: "" }}
-                placeholder="Full name"
+                placeholder="Your Name"
                 required
               />
             </div>
@@ -114,7 +108,7 @@ function ContactForm() {
                 className="rounded-4 main-border section-bg w-100 ps-3"
                 onChange={changeBorderForForm}
                 style={{ height: "50px" }}
-                placeholder="Email address"
+                placeholder="Your Email"
                 required
               />
             </div>
@@ -125,7 +119,7 @@ function ContactForm() {
             className="rounded-4 main-border section-bg w-100 ps-3 mt-4 pt-3"
             onChange={changeBorderForForm}
             style={{ height: "200px", resize: "none" }}
-            placeholder="Email address"
+            placeholder="Your Message"
             required
           />
           {formSubmit.err && (
@@ -137,7 +131,9 @@ function ContactForm() {
             </div>
           )}
           <button
-            className=" rounded-3 form-btn-not-allowed  secondary-bg orange-color p-3 mt-4 form-btn border-0"
+            className={` rounded-3  secondary-bg orange-color p-3 mt-4 form-btn ${
+              disabled ? "form-btn-not-allowed border-0" : ""
+            }`}
             type="submit"
             disabled={disabled}
           >

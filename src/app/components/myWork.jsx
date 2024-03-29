@@ -23,11 +23,11 @@ export default function MyWork() {
       </div>
       <div className="mt-5">
         <h4 className=" white-color mb-0">What i’m doing</h4>
-        <div className="d-flex  row  mt-3 gy-3">
-          <Job title="Desktop" icon={<DesktopWindowsOutlinedIcon className="orange-color fs-2" />} h5="Ui & Ux Designer" p=" The most modern and high-quality design made at a professional level."/>
-          <Job title="Code" icon={<CodeOutlinedIcon className="orange-color fs-2" />} h5="Front End Developer" p="  High-quality front end development of sites at theprofessional level."/>
-          <Job title="Color" icon={<EditOutlinedIcon className="orange-color fs-2" />} h5="Instructor" p=" I have ability to learn programming for sudents and children ."/>
-          <Job title="PermMedia" icon={<CodeOffOutlinedIcon className="orange-color fs-2" />} h5="Back End Developer" p="  High-quality back end development of sites at the professional level."/>
+        <div className="row justify-content-center mt-3 gy-3">
+          {/* <Job title="Desktop" icon={<DesktopWindowsOutlinedIcon className="orange-color fs-2" />} h5="Ui & Ux Designer" p=" The most modern and high-quality design made at a professional level."/> */}
+          <Job title="Code" icon={<CodeOutlinedIcon className="orange-color fs-2" />} h5="Front End Developer" p="High-quality front end development of sites at the professional level."/>
+          <Job title="Color" icon={<EditOutlinedIcon className="orange-color fs-2" />} h5="Instructor" p="I have the ability to teach programming for people ."/>
+          {/* <Job title="PermMedia" icon={<CodeOffOutlinedIcon className="orange-color fs-2" />} h5="Back End Developer" p="  High-quality back end development of sites at the professional level."/> */}
         </div>
       </div>
     </div>

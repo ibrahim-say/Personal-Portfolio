@@ -50,7 +50,7 @@ export default function FewdiModal() {
               <h5 className="white-color mt-4">
                 Front End Web Development Instructor{" "}
               </h5>
-              <h6 className="orange-color">2022 Aug - 2022 Nov</h6>
+              <h6 className="orange-color"> Aug 2022 -  Nov 2022</h6>
             </div>
             <div>
               <p className="light-gray-color line-height">
@@ -116,10 +116,10 @@ export default function FewdiModal() {
           </Box>
         </Modal>
       </div>
-      <h6 className="orange2-color">2022 Aug - 2022 Nov</h6>
+      <h6 className="orange2-color"> Aug 2022 - Nov 2022</h6>
       <p className="light-gray-color mb-0">
         {" "}
-        I have taught three month (90 days) Front End Web Development Bootcamp
+        I have taught three month Front End Web Development Bootcamp
         at my faculty (Computers And Arificial Inellegence) more than 30
         students. I have taught the basics to intermidiate level of front end
         web development.

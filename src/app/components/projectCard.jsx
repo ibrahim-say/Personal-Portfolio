@@ -11,7 +11,7 @@ function ProjectCard({link,src,name,type}) {
     <a href={link} className='project' target="_blank" style={{height:"150px",display:"inline-block"}}>
    <Image src={src}
     className="rounded-4 w-100  h-100 "
-   alt={name}
+    alt={name}
     />
      <button
     
