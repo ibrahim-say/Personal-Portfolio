@@ -5,7 +5,7 @@ import project3 from "/public/images/project3.png";
 import project4 from "/public/images/project4.png";
 import project5 from "/public/images/project5.png";
 import project6 from "/public/images/project6.png";
-import aivora from "/public/images/aivora.png";
+import aivora from "/public/images/Aivora.png";
 import ProjectCard from "./ProjectCard";
 function AllProjects({ type }) {
   return (
