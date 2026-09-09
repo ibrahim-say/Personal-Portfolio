@@ -1,7 +1,7 @@
 import React from "react";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
-import SkillList from "./skillList";
-import ReactLibraries from "../componentsOfModal/reactLibraries";
+import SkillList from "./SkillList";
+import ReactLibrariesModal from "./ReactLibrariesModal";
 
 
 function Skills() {
@@ -34,15 +34,34 @@ function Skills() {
             <li className="position-relative mt-4 white-color">Javascript</li>
         <p className="m-0 p-0 orange2-color" style={{opacity:"0.5",fontSize:"12px"}}>  (reactjs)  </p>
             <li className="position-relative mt-4 white-color">       
-<ReactLibraries/>
+<ReactLibrariesModal/>
             </li>
             <li className="position-relative mt-4 white-color">Next.js</li>
             <li className="position-relative mt-4 white-color">Git & Github</li>
            </ul>
          
         </div>
+        
         <SkillList h5="Programming Skills" items={["C Langauege","Java Langauege","Algorithm","Data Structure","Problem Solving","OOP"]}/> 
         <SkillList h5="Other Skills" items={["Creative Thinking","Researching","Leadership","Instructor","Collabrating"]}/>
+        <SkillList
+  h5="Back End Skills"
+  items={[
+    "Node.js",
+    "Express.js",
+    "Java",
+    "Spring Boot",
+    "REST API",
+    "MongoDB",
+    "Mongoose",
+    "Prisma",
+    "SQL",
+    "Authentication",
+    "Authorization",
+    "Git",
+    "Docker",
+  ]}
+/>
       </div>
     </div>
   );

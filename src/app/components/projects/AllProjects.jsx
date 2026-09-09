@@ -5,11 +5,12 @@ import project3 from "/public/images/project3.png";
 import project4 from "/public/images/project4.png";
 import project5 from "/public/images/project5.png";
 import project6 from "/public/images/project6.png";
-import ProjectCard from "./projectCard";
+import aivora from "/public/images/aivora.png";
+import ProjectCard from "./ProjectCard";
 function AllProjects({ type }) {
   return (
     <div className="row m-0 gy-5 ">
-      {(type === "template" || type === "all") && (
+      {(type === "frontend" || type === "all") && (
         <>
           <ProjectCard
             link="https://ibrahim-say.github.io/template1/"
@@ -37,7 +38,18 @@ function AllProjects({ type }) {
           />
         </>
       )}
-      {(type === "game" || type === "all") && (
+      {(type === "fullstack" || type === "all") && (
+        <>
+          <ProjectCard
+            link="https://github.com/ibrahim-say/Aivora"
+            src={aivora}
+            name="Aivora"
+            type="Ai Tools Directory"
+          />
+       
+        </>
+      )}
+      {(type === "games" || type === "all") && (
         <>
           <ProjectCard
             link="https://ibrahim-say.github.io/Image_Editor/"

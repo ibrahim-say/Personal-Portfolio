@@ -1,12 +1,12 @@
 import React from "react";
 import frontendbook from "/public/images//frontendbook.png";
 import Image from "next/image";
-import Title from "../components/title";
+import Title from "../../ui/Title";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import style from "./styleformodal";  
+import style from "../styleformodal";  
  
 export default function FewdiModal() {
   const [open, setOpen] = React.useState(false);

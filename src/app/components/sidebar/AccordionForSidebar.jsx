@@ -6,9 +6,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
 import my_pic from "/public/images/my-pic.jpeg";
-import MyAccounts from "./myAccounts";
-import SidebarInfo from "./sidebarInfo";
-function AccordionC() {
+import MyAccounts from "../ui/MyAccounts";
+import SidebarInfo from "./SidebarInfo";
+function AccordionForSidebar() {
   return (
     <Accordion className="section-bg rounded-4 p-3 p-sm-4 main-border d-xl-none">
       <AccordionSummary
@@ -50,4 +50,4 @@ function AccordionC() {
   );
 }
 
-export default AccordionC;
+export default AccordionForSidebar;

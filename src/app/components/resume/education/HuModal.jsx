@@ -1,18 +1,18 @@
 import React from 'react'
 import helwanImage from "/public/images/hu.jpg";
-import Title from "../components/title";
+import Title from "../../ui/Title";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Image from "next/image";
 import ministry from "/public/images//ministry.jpeg";
-import style from "./styleformodal";  
+import style from "../styleformodal";  
  
  
 
 
-export default function Uhmodal() {
+export default function HuModal() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false); 

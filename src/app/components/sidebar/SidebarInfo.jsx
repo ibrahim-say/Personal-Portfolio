@@ -1,5 +1,5 @@
 import React from 'react'
-import SidebarInfoSection from './sidebarInfoSection'
+import SidebarInfoSection from './SidebarInfoSection'
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
@@ -9,11 +9,11 @@ function SidebarInfo() {
     <>
     <SidebarInfoSection
       title1="Email"
-      title2="ibrahimsayed7410@gmail.com"
+      title2="s.w.e.ibrahimsayed@gmail.com"
       icon={<EmailOutlinedIcon className="orange-color" />}
       h6="Email"
-      href="mailto:ibrahimsayed7410@gmail.com"
-      link="  ibrahimsayed7410@gmail.com"
+      href="s.w.e.ibrahimsayed@gmail.com"
+      link=" s.w.e.ibrahimsayed@gmail.com"
     />
     <SidebarInfoSection
       title1="Phone"
@@ -25,7 +25,7 @@ function SidebarInfo() {
     />
     <SidebarInfoSection
       title1="Calender"
-      title2="I am currently 22 years old"
+      title2="I am currently 24 years old"
       icon={<CalendarMonthOutlinedIcon className="orange-color" />}
       h6="Birthday"
       link="Nov 1,2001"

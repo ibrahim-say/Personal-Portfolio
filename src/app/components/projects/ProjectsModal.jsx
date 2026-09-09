@@ -1,14 +1,14 @@
 import React from 'react'
-import Title from '../components/title'
+import Title from '../ui/Title'
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { useState } from "react";
-import AllProjects from '../components/allProjects';
+import AllProjects from './AllProjects';
 
-function Projects() {
+function ProjectsModal() {
     const [value, setValue] = useState("1");
     const handleChange = (event, newValue) => {
       setValue(newValue);
@@ -26,8 +26,9 @@ function Projects() {
              
             >
               <Tab label="All" value="1"  className= {`${value === "1"? "orange2-color":"white-color"} ps-0`} style={{textTransform:"none"}} />
-              <Tab label="Templates" value="2" className={value === "2"? "orange2-color":"white-color"} style={{textTransform:"none"}} />
-              <Tab label="Games" value="3" className={value === "3"? "orange2-color":"white-color"} style={{textTransform:"none"}}/>
+              <Tab label="Front End" value="2" className={value === "2"? "orange2-color":"white-color"} style={{textTransform:"none"}} />
+              <Tab label="Full Stack" value="3" className={value === "3"? "orange2-color":"white-color"} style={{textTransform:"none"}} />
+              <Tab label="Games" value="4" className={value === "4"? "orange2-color":"white-color"} style={{textTransform:"none"}}/>
             </TabList>
           </Box>
           <TabPanel value="1"  className="p-0" >
@@ -35,11 +36,15 @@ function Projects() {
 
           </TabPanel>
           <TabPanel value="2" className="p-0">
-         <AllProjects type="template"/>
+         <AllProjects type="frontend"/>
             
           </TabPanel>
-          <TabPanel value="3" className="p-0" >
-          <AllProjects type="game"/>
+          <TabPanel value="3" className="p-0">
+         <AllProjects type="fullstack"/>
+            
+          </TabPanel>
+          <TabPanel value="4" className="p-0" >
+          <AllProjects type="games"/>
 
           </TabPanel>
         </TabContext>
@@ -48,4 +53,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default ProjectsModal

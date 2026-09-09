@@ -3,13 +3,13 @@ import elzero from "/public/images//elzero.png";
 import codzella from "/public/images//codezilla.png";
 import hassouna from "/public/images//hassouna.jpeg";
 import nouvil from "/public/images//nouvil.png"
-import Title from "../components/title";
+import Title from "../../ui/Title";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Image from "next/image";
-import style from "./styleformodal";  
+import style from "../styleformodal";  
   
 export default function YoutubeModal() {
     const [open, setOpen] = React.useState(false);

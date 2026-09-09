@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import windowWidth from "./featuers/modalSlice"
+import windowWidth from "./modalSlice"
 
 
 export const store = configureStore({

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import my_pic from "/public/images/my-pic.jpeg";
-import MyAccounts from "./myAccounts";
-import SidebarInfo from "./sidebarInfo";
+import MyAccounts from "../ui/MyAccounts";
+import SidebarInfo from "./SidebarInfo";
 
 function Sidebar() {
 
@@ -27,7 +27,7 @@ function Sidebar() {
             style={{ width: "fit-content", fontSize: "12px" }}
             className="p-2 rounded m-auto white-color secondary-bg"
           >
-            Front End Developer
+            Full Stack Engineer
           </h6>
         </div>
    

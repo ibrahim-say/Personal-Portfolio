@@ -126,7 +126,7 @@ function ContactForm() {
             <div className=" text-center mt-4">
               <div className="alert alert-danger">
                 <CloseIcon style={{ color: "red" }} />
-                oops,something wrong, try again later
+                oops,something wrong, try again later or contact me 01157767177
               </div>
             </div>
           )}

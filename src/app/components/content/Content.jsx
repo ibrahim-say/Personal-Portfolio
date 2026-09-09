@@ -5,11 +5,11 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import About from "../componentsOfTabs.js/about";
+import AboutModal from "../about/AboutModal";
 import { useState } from "react";
-import Resume from "../componentsOfTabs.js/resume";
-import Projects from "../componentsOfTabs.js/projects";
-import Contact from "../componentsOfTabs.js/contact";
+import ResumeModal from "../resume/ResumeModal";
+import ProjectsModal from "../projects/ProjectsModal";
+import ContactModal from "../contact/ContactModal";
 
 function Content() {
 
@@ -63,16 +63,16 @@ function Content() {
             </TabList>
           </Box>
           <TabPanel value="1" className="p-0">
-            <About />
+            <AboutModal />
           </TabPanel>
           <TabPanel value="2" className="p-0">
-            <Resume />
+            <ResumeModal />
           </TabPanel>
           <TabPanel value="3" className="p-0">
-            <Projects />
+            <ProjectsModal />
           </TabPanel>
           <TabPanel value="4" className="p-0">
-            <Contact />
+            <ContactModal />
           </TabPanel>
         </TabContext>
       </Box>

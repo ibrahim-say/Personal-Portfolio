@@ -1,8 +1,8 @@
 import React from "react";
 import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
-import Uhmodal from "../componentsOfModal/uhModal";
-import YoutubeModal from "../componentsOfModal/youtubeModal";
-import EducationItem from "./educationItem";
+import HuModal from "./HuModal";
+import YoutubeModal from "./YoutubeModal";
+import EducationItem from "./EducationItem";
 
  
 
@@ -25,7 +25,7 @@ function Education() {
         style={{ listStyle: "none", marginLeft: "68px" }}
       >
         <li className=" position-relative mt-4">
-        <Uhmodal />
+        <HuModal />
         </li>
         <li className=" position-relative mt-4">
         <YoutubeModal />

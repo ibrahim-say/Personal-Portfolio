@@ -7,8 +7,8 @@ import linkedin from "/public/images//in.png";
 import _555 from "/public/images//555.png";
 import upwork from "/public/images//upwork.png";
 import Image from "next/image";
-import Title from "../components/title";
-import style from "./styleformodal";  
+import Title from "../../ui/Title";
+import style from "../styleformodal";  
 
  
 

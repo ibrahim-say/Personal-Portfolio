@@ -1,15 +1,15 @@
 import React from 'react'
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import  reactImage from  "/public/images/reactImage.png"
-import Title from "../components/title";
+import Title from "../../ui/Title";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-import style from "../componentsOfModal/styleformodal"
+import style from "../styleformodal"
 import Image from "next/image";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 
-function ReactLibraries() {
+function ReactLibrariesModal() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false); 
@@ -75,4 +75,4 @@ function ReactLibraries() {
   )
 }
 
-export default ReactLibraries
+export default ReactLibrariesModal

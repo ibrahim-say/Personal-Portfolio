@@ -1,7 +1,9 @@
 import React from 'react'
 import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
-import FewdModal from '../componentsOfModal/fewdModal';
-import FewdiModal from '../componentsOfModal/fewdiModal';
+import FrontendModal from './FrontendModal';
+import FrondendInstructorModal from './FrondendInstructorModal';
+import BackendModal from './BackendModal';
+import FullStackModal from './FullStackModal';
 
 
 function Experience({style}) {
@@ -24,12 +26,19 @@ function Experience({style}) {
       style={{ listStyle: "none", marginLeft: "70px" }}
     >
       <li className=" position-relative mt-4">
-     <FewdModal style={style}/>
+     <FrontendModal style={style}/>
 
       </li>
       <li className=" position-relative mt-4">
-        <FewdiModal style={style}/>
+        <BackendModal style={style}/>
       </li>
+      <li className=" position-relative mt-4">
+        <FullStackModal style={style}/>
+      </li>
+      <li className=" position-relative mt-4">
+        <FrondendInstructorModal style={style}/>
+      </li>
+   
     </ul>
   </div>
   )

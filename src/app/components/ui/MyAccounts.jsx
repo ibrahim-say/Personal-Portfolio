@@ -15,7 +15,7 @@ function MyAccounts(props) {
         <GitHubIcon />
       </a>
       <a
-        href="https://www.linkedin.com/in/ibrahim-sayed-59abb1283/"
+        href="https://www.linkedin.com/in/ibrahim-sayed-9b3768408/"
         title="My account on linkedIn"
         className=" light-gray-color  col text-center me-2"
       >
