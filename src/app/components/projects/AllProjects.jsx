@@ -41,7 +41,7 @@ function AllProjects({ type }) {
       {(type === "fullstack" || type === "all") && (
         <>
           <ProjectCard
-            link="https://github.com/ibrahim-say/Aivora"
+            link="https://aivora.directory/"
             src={aivora}
             name="Aivora"
             type="Ai Tools Directory"

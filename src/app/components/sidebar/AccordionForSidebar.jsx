@@ -32,7 +32,7 @@ function AccordionForSidebar() {
               style={{ width: "fit-content", fontSize: "12px" }}
               className="p-2 rounded m-auto white-color secondary-bg mt-3"
             >
-              Front End Developer
+              Full Stack Engineer
             </h6>
           </div>
         </div>
