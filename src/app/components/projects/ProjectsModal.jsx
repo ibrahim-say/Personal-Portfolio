@@ -28,7 +28,6 @@ function ProjectsModal() {
               <Tab label="All" value="1"  className= {`${value === "1"? "orange2-color":"white-color"} ps-0`} style={{textTransform:"none"}} />
               <Tab label="Front End" value="2" className={value === "2"? "orange2-color":"white-color"} style={{textTransform:"none"}} />
               <Tab label="Full Stack" value="3" className={value === "3"? "orange2-color":"white-color"} style={{textTransform:"none"}} />
-              <Tab label="Games" value="4" className={value === "4"? "orange2-color":"white-color"} style={{textTransform:"none"}}/>
             </TabList>
           </Box>
           <TabPanel value="1"  className="p-0" >
