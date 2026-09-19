@@ -42,11 +42,7 @@ function ProjectsModal() {
           <TabPanel value="3" className="p-0">
          <AllProjects type="fullstack"/>
             
-          </TabPanel>
-          <TabPanel value="4" className="p-0" >
-          <AllProjects type="games"/>
-
-          </TabPanel>
+         
         </TabContext>
       </Box>
     </div>

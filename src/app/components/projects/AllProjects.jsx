@@ -36,22 +36,7 @@ function AllProjects({ type }) {
             name="Dashboard Template"
             type="Template"
           />
-        </>
-      )}
-      {(type === "fullstack" || type === "all") && (
-        <>
-          <ProjectCard
-            link="https://aivora.directory/"
-            src={aivora}
-            name="Aivora"
-            type="Ai Tools Directory"
-          />
-       
-        </>
-      )}
-      {(type === "games" || type === "all") && (
-        <>
-          <ProjectCard
+            <ProjectCard
             link="https://ibrahim-say.github.io/Image_Editor/"
             src={project5}
             name="Image Editor"
@@ -65,6 +50,18 @@ function AllProjects({ type }) {
           />
         </>
       )}
+      {(type === "fullstack" || type === "all") && (
+        <>
+          <ProjectCard
+            link="https://aivora.directory/"
+            src={aivora}
+            name="Aivora"
+            type="Ai Tools Directory"
+          />
+       
+        </>
+      )}
+    
     </div>
   );
 } 
