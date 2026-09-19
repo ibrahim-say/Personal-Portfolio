@@ -42,7 +42,7 @@ function ProjectsModal() {
           <TabPanel value="3" className="p-0">
          <AllProjects type="fullstack"/>
             
-         
+          </TabPanel>
         </TabContext>
       </Box>
     </div>
